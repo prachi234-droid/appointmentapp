@@ -1,0 +1,110 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212; /* Dark background */
+    margin: 0;
+    color: #e0e0e0; /* Light grey text */
+}
+
+#container {
+    width: 400px;
+    padding: 20px;
+    background: #1e1e1e; /* Slightly lighter container background */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Softer shadow */
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffa500; /* Orange color for heading */
+}
+
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff; /* White text */
+}
+
+input {
+    background-color: #3a3a3a; /* Darker input background */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+input:focus {
+    background-color: #4a4a4a; /* Lighten input on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    background-color: #007BFF; /* Blue button */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+p a {
+    color: #ffa500; /* Orange link color */
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth transition */
+}
+
+p a:hover {
+    text-decoration: underline;
+    color: #fff; /* Change link color on hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #1e1e1e; /* Dark table background */
+    border-radius: 5px;
+}
+
+th, td {
+    border: 1px solid #555; /* Darker border */
+    padding: 10px;
+    text-align: left;
+    color: #fff; /* White text */
+}
+
+th {
+    background-color: #444; /* Dark header background */
+}
+
+#register-email, #register-password, #login-password, #login-email {
+    padding-right: 0px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+}
+
+#register, #login {
+    display: none;
+}
+
+#register.active, #login.active {
+    display: block;
+}
+
